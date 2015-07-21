@@ -1,0 +1,55 @@
+* {
+  transition: all 0.5s ease; }
+
+body {
+  background-color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px; }
+
+.site-header {
+  padding-bottom: 12.5px; }
+
+.owner-name {
+  font-size: 27.5px; }
+  .owner-name #first-name {
+    font-weight: bold;
+    color: #333; }
+    .owner-name #first-name:hover {
+      color: #4DB870; }
+  .owner-name #last-name {
+    color: #373c40;
+    margin-left: -7px; }
+    .owner-name #last-name:hover {
+      color: #4DB870; }
+  .owner-name:hover, .owner-name:focus {
+    text-decoration: none; }
+
+.menu-icon {
+  cursor: pointer;
+  margin-top: 40px; }
+
+.large-menu {
+  margin-top: 22.5px; }
+
+.nav-pills li a {
+  color: #373c40;
+  background-color: #fff;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  font-weight: bold; }
+  .nav-pills li a:hover, .nav-pills li a:focus {
+    color: #4DB870;
+    background-color: #fff; }
+
+#mobile-menu-group {
+  display: none;
+  height: 125px;
+  width: 100px;
+  margin-bottom: 15px; }
+
+.jumbotron {
+  background-image: url("https://c4.staticflickr.com/8/7409/10650712494_2a334af19e_b.jpg");
+  background-size: cover;
+  color: #d9d9d9; }
+
+/*# sourceMappingURL=main.css.map */
