@@ -10,19 +10,19 @@ body {
   padding-bottom: 12.5px;
   background-color: #fff; }
 
-.owner-name {
+.owner-name-header {
   font-size: 27.5px; }
-  .owner-name #first-name {
+  .owner-name-header #first-name-header {
     font-weight: bold;
     color: #333; }
-    .owner-name #first-name:hover {
+    .owner-name-header #first-name-header:hover {
       color: #4DB870; }
-  .owner-name #last-name {
+  .owner-name-header #last-name-header {
     color: #373c40;
     margin-left: -7px; }
-    .owner-name #last-name:hover {
+    .owner-name-header #last-name-header:hover {
       color: #4DB870; }
-  .owner-name:hover, .owner-name:focus {
+  .owner-name-header:hover, .owner-name-header:focus {
     text-decoration: none; }
 
 .menu-icon {
@@ -47,7 +47,8 @@ body {
   width: 100%;
   padding: 0;
   margin-top: 0;
-  border-radius: 0; }
+  border-radius: 0;
+  border-top: 1px solid #373c40; }
 
 .nav-stacked > li + li {
   margin-top: 0; }
@@ -62,15 +63,35 @@ body {
     padding: 0; }
 
 .jumbotron {
+  margin-top: 81.5px;
   padding: 0;
   width: 100%;
-  height: 500px;
-  background-image: url("../images/personal-header-image.jpg");
+  height: 700px;
+  background: url("http://www.edmdroid.com/wp-content/gallery/green-wallpaper/green-background-hd-wallpapers.jpg") no-repeat;
   background-size: cover; }
-  .jumbotron p {
-    display: inline-block;
+  .jumbotron .container h2 {
+    margin-top: 310px;
     text-align: center;
-    color: #fff;
-    vertical-align: middle; }
+    color: #fff; }
+    .jumbotron .container h2 #first-name {
+      font-size: 60px;
+      font-weight: bold; }
+    .jumbotron .container h2 #last-name {
+      font-size: 57.5px; }
+  .jumbotron .container .text-separator-line {
+    width: 50%;
+    margin: 0 auto;
+    border-top: 2px solid #fff;
+    opacity: 0.75; }
+  .jumbotron .container #job-title {
+    color: #e2e2e2;
+    font-size: 35px;
+    text-align: center;
+    margin: 15px auto; }
+  .jumbotron .container #leading-statement {
+    font-size: 25px;
+    text-align: center;
+    color: #e2e2e2;
+    margin-top: 15px; }
 
 /*# sourceMappingURL=main.css.map */

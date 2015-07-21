@@ -16,10 +16,10 @@ body {
   background-color: #fff;
 }
 
-.owner-name {
+.owner-name-header {
   font-size: 27.5px;
 
-  #first-name {
+  #first-name-header {
     font-weight: bold;
     color: #333;
 
@@ -27,7 +27,7 @@ body {
       color: $header-hover-color;
     }
   }
-  #last-name {
+  #last-name-header {
     color: $primary-text-color;
     margin-left: -7px;
 
@@ -77,11 +77,13 @@ body {
     padding: 0;
     margin-top: 0;
     border-radius: 0;
+    border-top: 1px solid $primary-text-color;
   }
 }
 
 .nav-stacked > li + li {
   margin-top: 0;
+
 
 }
 
@@ -98,16 +100,48 @@ body {
 }
 
 .jumbotron {
+  margin-top: 81.5px;
   padding: 0;
   width: 100%;
-  height: 500px;
-  background-image: url("../images/personal-header-image.jpg");
+  height: 700px;
+  background: url("http://www.edmdroid.com/wp-content/gallery/green-wallpaper/green-background-hd-wallpapers.jpg") no-repeat;
   background-size: cover;
   
-  p {
-    display: inline-block;
-    text-align: center;
-    color: #fff;
-    vertical-align: middle;
-  }  
+  .container {
+    h2 {
+      margin-top: 310px;
+      text-align: center;
+      color: #fff;
+
+      #first-name {
+        font-size: 60px;
+        font-weight: bold;
+      }
+
+      #last-name {
+        font-size: 57.5px;
+      }
+    }
+
+    .text-separator-line {
+      width: 50%;
+      margin: 0 auto;
+      border-top: 2px solid #fff;
+      opacity: 0.75;
+    }
+
+    #job-title {
+      color: #e2e2e2;
+      font-size: 35px;
+      text-align: center;
+      margin: 15px auto;
+    }
+
+    #leading-statement {
+      font-size: 25px;
+      text-align: center;
+      color: #e2e2e2;
+      margin-top: 15px;
+    }
+  }
 }
