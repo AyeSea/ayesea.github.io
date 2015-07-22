@@ -1,16 +1,27 @@
 $primary-text-color: #373c40;
+$secondary-text-color: #929697;
 $header-hover-color: #4DB870;
-
+$site-background-color: #fff;
+//General Styling
 * {
   transition: all 0.5s ease;
 }
 
 body {
-  background-color: #fff;
+  background-color: $site-background-color;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
 
+.text-separator-line {
+  height: 1px;
+  width: 250px;
+  margin: 0 auto;
+  border-top: 2px solid #c2c2c2;
+  opacity: 0.75;
+}
+
+//Site Header
 .site-header {
   padding-bottom: 12.5px;
   background-color: #fff;
@@ -99,6 +110,7 @@ body {
   }
 }
 
+//Personal Header
 .jumbotron {
   margin-top: 81.5px;
   padding: 0;
@@ -123,13 +135,6 @@ body {
       }
     }
 
-    .text-separator-line {
-      width: 50%;
-      margin: 0 auto;
-      border-top: 2px solid #fff;
-      opacity: 0.75;
-    }
-
     #job-title {
       color: #e2e2e2;
       font-size: 35px;
@@ -144,4 +149,54 @@ body {
       margin-top: 15px;
     }
   }
+}
+
+
+//About
+#about {
+  margin-bottom: 40px;
+  .container {
+    h2 {
+      text-transform: lowercase;
+      font-weight: bold;
+      font-size: 30px;
+      text-align: center;
+      color: $primary-text-color;
+    }
+
+    .text-separator-line {
+      width: 25px;
+      border-color: $primary-text-color;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+#self-photo {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+
+}
+
+#blurb {
+  text-align: center;
+  color: $primary-text-color;
+  font-size: 15px;
+
+  p {
+    .highlighted-text{
+      font-weight: bold;
+      color: $primary-text-color;
+    }
+  }
+
+  p:nth-child(even) {
+    color: $secondary-text-color
+  }
+}
+
+//Projects
+#projects {
+  background-color: #d2d2d2;
 }
