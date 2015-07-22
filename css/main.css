@@ -56,6 +56,8 @@ body {
   margin-top: 0;
   border-radius: 0;
   border-top: 1px solid #373c40; }
+  .nav-stacked li:last-child {
+    border-bottom: 1px solid #373c40; }
 
 .nav-stacked > li + li {
   margin-top: 0; }
@@ -123,6 +125,30 @@ body {
     color: #373c40; }
   #blurb p:nth-child(even) {
     color: #929697; }
+
+.panel {
+  border: none;
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2; }
+  .panel .panel-heading {
+    background: #fff;
+    border: none; }
+
+.skills-heading .skills-section-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold; }
+  .skills-heading .skills-section-title:hover {
+    cursor: pointer;
+    color: #4DB870; }
+
+.panel-body {
+  display: none; }
+  .panel-body .skills-list {
+    list-style-type: none;
+    padding: 0; }
+    .panel-body .skills-list li {
+      text-align: center; }
 
 #projects {
   background-color: #d2d2d2; }
