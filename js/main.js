@@ -1,11 +1,20 @@
 var $root = $('html, body');
 
-var slideToAnchor = function() {
-	$('a').click(function() {
-	    var href = $(this).attr('href');
-	    var offsetTop = 90;
+var hideSkills = function() {
+	$('.skills-heading').next('.panel-body').hide(500);
+};
 
-	    $('#mobile-menu-group').hide();
+var slideToAnchor = function() {
+	$('.section-link').click(function() {
+	    var href = $(this).attr('href');
+	    var offsetTop = 80;
+
+	    $('.section-link').removeClass("active-section-link");
+	    $(this).addClass("active-section-link");
+
+	    hideSkills();
+
+	    $('#mobile-menu-group').hide(700);
 
 	    $root.animate({scrollTop: $(href).offset().top - offsetTop}, 700);
 	     window.location.hash = href;
@@ -15,13 +24,14 @@ var slideToAnchor = function() {
 
 var menuToggle = function() {
 	$('.menu-icon').click(function() {
-		$('#mobile-menu-group').slideToggle();
+		$('#mobile-menu-group').slideToggle(500);
 	});
 };
 
+
 var skillsToggle = function() {
 	$('.skills-heading').click(function() {
-		$(this).next('.panel-body').slideToggle();
+		$(this).next('.panel-body').slideToggle(500);
 	});
 };
 
