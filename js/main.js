@@ -7,9 +7,8 @@ var slideToAnchor = function() {
 
 	    $('#mobile-menu-group').hide();
 
-	    $root.animate({scrollTop: $(href).offset().top - offsetTop}, 700, function () {
-	        window.location.hash = href;
-	    });
+	    $root.animate({scrollTop: $(href).offset().top - offsetTop}, 700);
+	     window.location.hash = href;
 	    return false;
 	});
 };
