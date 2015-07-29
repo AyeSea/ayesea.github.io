@@ -216,22 +216,22 @@ footer {
 .project-4 {
   background-image: url("../images/project-4.JPG"); }
 
-.project-overlay {
+.overlay {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 100;
   background-color: rgba(0, 0, 0, 0.7); }
-  .project-overlay .project-text {
+  .overlay .project-text {
     color: #fff;
     text-align: center;
     margin-top: 250px; }
-    .project-overlay .project-text .project-title {
+    .overlay .project-text .project-title {
       font-size: 30px;
       font-weight: bold; }
-    .project-overlay .project-text .project-desc {
+    .overlay .project-text .project-desc {
       font-size: 20px; }
-  .project-overlay:hover {
+  .overlay:hover {
     background-color: rgba(0, 0, 0, 0.35); }
 
 #connect {
