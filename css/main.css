@@ -127,6 +127,19 @@ footer {
       background-color: #fff;
       color: #4DB870; }
 
+#about .container .row .col-xs-12 .panel,
+#about .container .row .col-sm-6 .panel {
+  border-color: #fff;
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2; }
+  #about .container .row .col-xs-12 .panel .panel-heading,
+  #about .container .row .col-sm-6 .panel .panel-heading {
+    background: #fff;
+    border: none; }
+  #about .container .row .col-xs-12 .panel .panel-body,
+  #about .container .row .col-sm-6 .panel .panel-body {
+    font-size: 20px; }
+
 .section-header {
   display: none;
   text-transform: lowercase;
@@ -153,25 +166,18 @@ footer {
   margin-bottom: 20px;
   text-align: center;
   color: #373c40;
-  font-size: 15px; }
+  font-size: 20px; }
   #blurb p .highlighted-text {
     font-weight: bold;
     color: #373c40; }
   #blurb p:nth-child(even) {
     color: #929697; }
 
-.panel {
-  border-color: #fff;
-  border-top: 1px solid #e2e2e2;
-  border-bottom: 1px solid #e2e2e2; }
-  .panel .panel-heading {
-    background: #fff;
-    border: none; }
-
 .skills-heading .skills-section-title {
   text-transform: uppercase;
   text-align: center;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 20px; }
   .skills-heading .skills-section-title:hover {
     cursor: pointer;
     color: #4DB870; }
@@ -184,15 +190,13 @@ footer {
     .panel-body .skills-list li {
       text-align: center; }
 
-#projects {
-  background-color: #4DB870; }
-  #projects .container-fluid .row .section-header {
-    color: #fff; }
-  #projects .container-fluid .row .section-header-underline {
-    border-color: #fff; }
-  #projects .container-fluid .row .col-xs-12,
-  #projects .container-fluid .row .col-sm-6 {
-    padding: 0; }
+#projects .container-fluid .row .section-header {
+  color: #fff; }
+#projects .container-fluid .row .section-header-underline {
+  border-color: #fff; }
+#projects .container-fluid .row .col-xs-12,
+#projects .container-fluid .row .col-sm-6 {
+  padding: 0; }
 
 .project-container {
   display: block;
@@ -240,6 +244,19 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
+
+.connect-box {
+  margin-top: 250px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 320px; }
+
+.fa {
+  font-size: 35px;
+  margin-right: 15px; }
+
+.link-text {
+  display: inline-block; }
 
 #site-footer {
   height: 75px;
