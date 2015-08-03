@@ -125,6 +125,7 @@ footer {
   top: 81.5px;
   height: 124px;
   display: none;
+  transition: none;
 
   .container {
     padding: 0;
@@ -285,10 +286,9 @@ footer {
 .skills-body {
   display: none;
   height: 152px;
-  position: relative;
+  transition: none;
 
   .skills-list {
-    position: relative;
     list-style-type: none;
     padding: 0;
 

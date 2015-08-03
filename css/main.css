@@ -77,7 +77,8 @@ footer {
   right: 0;
   top: 81.5px;
   height: 124px;
-  display: none; }
+  display: none;
+  transition: none; }
   #mobile-menu-group .container {
     padding: 0; }
 
@@ -186,9 +187,8 @@ footer {
 .skills-body {
   display: none;
   height: 152px;
-  position: relative; }
+  transition: none; }
   .skills-body .skills-list {
-    position: relative;
     list-style-type: none;
     padding: 0; }
     .skills-body .skills-list li {

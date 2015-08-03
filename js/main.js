@@ -31,7 +31,7 @@ var menuToggle = function() {
 
 var skillsToggle = function() {
 	$('.skills-heading').click(function() {
-		$(this).next('.panel-body').slideToggle();
+		$(this).next('.panel-body').slideToggle("slow");
 	});
 };
 
