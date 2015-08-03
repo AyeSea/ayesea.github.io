@@ -123,6 +123,7 @@ footer {
   left: 0;
   right: 0;
   top: 81.5px;
+  height: 124px;
   display: none;
 
   .container {
@@ -281,10 +282,13 @@ footer {
   }
 }
 
-.panel-body {
+.skills-body {
   display: none;
+  height: 152px;
+  position: relative;
 
   .skills-list {
+    position: relative;
     list-style-type: none;
     padding: 0;
 

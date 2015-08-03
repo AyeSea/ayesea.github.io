@@ -24,14 +24,14 @@ var slideToAnchor = function() {
 
 var menuToggle = function() {
 	$('.menu-icon').click(function() {
-		$('#mobile-menu-group').slideToggle(500);
+		$('#mobile-menu-group').slideToggle();
 	});
 };
 
 
 var skillsToggle = function() {
 	$('.skills-heading').click(function() {
-		$(this).next('.panel-body').slideToggle(500);
+		$(this).next('.panel-body').slideToggle();
 	});
 };
 

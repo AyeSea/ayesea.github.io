@@ -76,6 +76,7 @@ footer {
   left: 0;
   right: 0;
   top: 81.5px;
+  height: 124px;
   display: none; }
   #mobile-menu-group .container {
     padding: 0; }
@@ -182,12 +183,15 @@ footer {
     cursor: pointer;
     color: #4DB870; }
 
-.panel-body {
-  display: none; }
-  .panel-body .skills-list {
+.skills-body {
+  display: none;
+  height: 152px;
+  position: relative; }
+  .skills-body .skills-list {
+    position: relative;
     list-style-type: none;
     padding: 0; }
-    .panel-body .skills-list li {
+    .skills-body .skills-list li {
       text-align: center; }
 
 #projects .container-fluid .row .section-header {
