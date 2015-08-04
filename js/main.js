@@ -15,7 +15,7 @@ var slideToAnchor = function() {
 
 	    hideSkills();
 
-	    $('#mobile-menu-group').slideUp("slow");
+	    $('#mobile-menu-group').hide("slow");
 
 	    $root.animate({scrollTop: $(href).offset().top - offsetTop}, "slow");
 	     window.location.hash = href;
@@ -27,6 +27,7 @@ var menuToggle = function() {
 	$('.menu-icon').click(function() {
 		$('#mobile-menu-group').slideToggle();
 	});
+
 };
 
 
