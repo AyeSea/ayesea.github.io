@@ -6,6 +6,7 @@ var hideSkills = function() {
 
 var slideToAnchor = function() {
 	$('.section-link').click(function() {
+			event.preventDefault();
 	    var href = $(this).attr('href');
 	    var offsetTop = 80;
 
@@ -16,7 +17,7 @@ var slideToAnchor = function() {
 
 	    $('#mobile-menu-group').hide(700);
 
-	    $root.animate({scrollTop: $(href).offset().top - offsetTop}, 700);
+	    $root.animate({scrollTop: $(href).offset().top - offsetTop}, "slow");
 	     window.location.hash = href;
 	    return false;
 	});

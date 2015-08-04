@@ -168,7 +168,9 @@ footer {
   margin-bottom: 20px;
   text-align: center;
   color: #373c40;
-  font-size: 20px; }
+  font-size: 22px;
+  padding-left: 50px;
+  padding-right: 50px; }
   #blurb p .highlighted-text {
     font-weight: bold;
     color: #373c40; }
