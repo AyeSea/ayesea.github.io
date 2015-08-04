@@ -1,7 +1,7 @@
 var $root = $('html, body');
 
 var hideSkills = function() {
-	$('.skills-heading').next('.panel-body').hide(500);
+	$('.skills-heading').next('.panel-body').slideUp("slow");
 };
 
 var slideToAnchor = function() {
@@ -15,7 +15,7 @@ var slideToAnchor = function() {
 
 	    hideSkills();
 
-	    $('#mobile-menu-group').hide(700);
+	    $('#mobile-menu-group').slideUp("slow");
 
 	    $root.animate({scrollTop: $(href).offset().top - offsetTop}, "slow");
 	     window.location.hash = href;
