@@ -5,7 +5,7 @@ var hideSkills = function() {
 };
 
 var slideToAnchor = function() {
-	$('.section-link').click(function() {
+	$('.section-link').click(function(event) {
 			event.preventDefault();
 	    var href = $(this).attr('href');
 	    var offsetTop = 80;
