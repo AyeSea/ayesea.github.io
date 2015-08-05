@@ -78,7 +78,8 @@ footer {
   top: 81.5px;
   height: 124px;
   display: none;
-  transition: none; }
+  transition: none;
+  border-bottom: none; }
   #mobile-menu-group .container {
     padding: 0; }
 

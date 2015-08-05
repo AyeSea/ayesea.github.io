@@ -30,6 +30,10 @@ var menuToggle = function() {
 
 };
 
+var menuHide = function() {
+	//mobile menu should slideUp when screen width is >= 768px
+}
+
 
 var skillsToggle = function() {
 	$('.skills-heading').click(function() {

@@ -14,6 +14,7 @@ body {
   font-size: 16px;
 }
 
+
 header,
 section,
 footer {
@@ -126,6 +127,7 @@ footer {
   height: 124px;
   display: none;
   transition: none;
+  border-bottom: none;
 
   .container {
     padding: 0;
