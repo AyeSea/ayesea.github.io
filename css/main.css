@@ -178,25 +178,6 @@ footer {
   #blurb p:nth-child(even) {
     color: #929697; }
 
-.skills-heading .skills-section-title {
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: bold;
-  font-size: 20px; }
-  .skills-heading .skills-section-title:hover {
-    cursor: pointer;
-    color: #4DB870; }
-
-.skills-body {
-  display: none;
-  height: 152px;
-  transition: none; }
-  .skills-body .skills-list {
-    list-style-type: none;
-    padding: 0; }
-    .skills-body .skills-list li {
-      text-align: center; }
-
 #projects .container-fluid .row .section-header {
   color: #fff; }
 #projects .container-fluid .row .section-header-underline {

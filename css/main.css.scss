@@ -272,37 +272,6 @@ footer {
   }
 }
 
-.skills-heading {
-
-  .skills-section-title {
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-
-    &:hover {
-      cursor: pointer;
-      color: $text-hover-color;
-    }
-  }
-}
-
-.skills-body {
-  display: none;
-  height: 152px;
-  transition: none;
-
-  .skills-list {
-    list-style-type: none;
-    padding: 0;
-
-    li {
-      text-align: center;
-    }
-  }
-}
-
-
 //Projects
 #projects {
 
