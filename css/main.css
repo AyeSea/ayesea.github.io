@@ -1,6 +1,3 @@
-* {
-  transition: all 0.5s ease; }
-
 body {
   background-color: #fff;
   font-family: 'Open Sans', sans-serif;
@@ -25,17 +22,20 @@ footer {
   box-shadow: 1px 1px 1px #929697; }
 
 #owner-name-header {
-  font-size: 27.5px; }
+  font-size: 27.5px;
+  transition: all 0.5s ease; }
   #owner-name-header:hover, #owner-name-header:focus {
     text-decoration: none; }
   #owner-name-header #first-name-header {
     font-weight: bold;
-    color: #333; }
+    color: #333;
+    transition: all 0.5s ease; }
     #owner-name-header #first-name-header:hover {
       color: #4DB870; }
   #owner-name-header #last-name-header {
     color: #373c40;
-    margin-left: -7px; }
+    margin-left: -7px;
+    transition: all 0.5s ease; }
     #owner-name-header #last-name-header:hover {
       color: #4DB870; }
 
@@ -52,7 +52,8 @@ footer {
   text-transform: uppercase;
   font-size: 0.85em;
   font-weight: bold;
-  border-radius: 0; }
+  border-radius: 0;
+  transition: all 0.5s ease; }
   .nav-pills li a:hover, .nav-pills li a:focus {
     color: #4DB870;
     background-color: #fff; }
@@ -124,7 +125,8 @@ footer {
     color: #fff;
     font-size: 20px;
     font-weight: bold;
-    background-color: transparent; }
+    background-color: transparent;
+    transition: all 0.5s ease; }
     .jumbotron .container #learn-more:hover, .jumbotron .container #learn-more:active {
       text-decoration: none;
       background-color: #fff;
@@ -178,18 +180,20 @@ footer {
   #blurb p:nth-child(even) {
     color: #929697; }
 
-#projects .container-fluid .row .section-header {
-  color: #fff; }
-#projects .container-fluid .row .section-header-underline {
-  border-color: #fff; }
-#projects .container-fluid .row .col-xs-12,
-#projects .container-fluid .row .col-sm-6 {
-  padding: 0; }
+#projects {
+  position: relative; }
+  #projects .container-fluid .row .section-header {
+    color: #fff; }
+  #projects .container-fluid .row .section-header-underline {
+    border-color: #fff; }
+  #projects .container-fluid .row .col-xs-12,
+  #projects .container-fluid .row .col-sm-6 {
+    padding: 0; }
 
 .project-container {
   display: block;
   width: 100%;
-  min-height: 525px;
+  min-height: 800px;
   text-align: center;
   text-decoration: none;
   background-size: cover;
@@ -219,7 +223,8 @@ footer {
   width: 100%;
   height: 100%;
   z-index: 100;
-  background-color: rgba(0, 0, 0, 0.7); }
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.5s ease; }
   .overlay .project-text {
     color: #fff;
     text-align: center;
@@ -231,6 +236,39 @@ footer {
       font-size: 20px; }
   .overlay:hover {
     background-color: rgba(0, 0, 0, 0.35); }
+
+.slide {
+  display: none; }
+
+.slide-active {
+  display: block; }
+
+.nav-slider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  background-color: rgba(0, 0, 0, 0.7); }
+
+.slider-buttons {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  .slider-buttons li {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all 0.5s ease; }
+  .slider-buttons li:hover {
+    background-color: rgba(255, 255, 255, 0.35); }
+
+li.slider-button-active {
+  background-color: rgba(255, 255, 255, 0.35); }
 
 #connect {
   min-height: 800px;
@@ -244,6 +282,8 @@ footer {
   margin-right: auto;
   margin-left: auto;
   width: 320px; }
+  .connect-box a {
+    transition: all 0.5s ease; }
 
 .fa {
   font-size: 35px;
