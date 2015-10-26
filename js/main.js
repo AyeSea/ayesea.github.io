@@ -42,6 +42,8 @@ var skillsToggle = function() {
 };
 
 /* Carousel Functions */
+
+//slider buttons
 var navigateToSlide = function() {
 	$('.slider-button').click(function() {
 			var newButton = $(this);
@@ -54,23 +56,31 @@ var navigateToSlide = function() {
 			//Add this value to the ".slide" string to determine the matching slide class.
 			var matchingSlideClass = ".slide" + String( $(".slider-button").index(newButton) + 1 );
 
-
 			//Determine slide to go to
 			var newSlide = $(".slide").filter(matchingSlideClass);
 
 			//Fade current slide out and new side in. Add/remove active-slide class.
-			currentSlide.fadeOut(500, function() {
-				currentSlide.removeClass('slide-active');
-				newSlide.fadeIn(500).addClass('slide-active');
-			});
+			slideAnimation(currentSlide, newSlide);
 
 			//Remove the slider-button-active class from the current button and
 			//move it to the new one.
-			currentButton.removeClass("slider-button-active");
-			newButton.addClass("slider-button-active");
+			buttonAnimation(currentButton, newButton);
+
 	});
 
 };
+
+var slideAnimation = function (currentSlide, newSlide) {
+	currentSlide.fadeOut(500, function() {
+		currentSlide.removeClass('slide-active');
+		newSlide.fadeIn(500).addClass('slide-active');
+	});
+}
+
+var buttonAnimation = function(currentButton, newButton) {
+	currentButton.removeClass("slider-button-active");
+	newButton.addClass("slider-button-active");	
+}
 
 
 /* Functions to Run on Document Load */
@@ -79,4 +89,5 @@ $(document).ready(function() {
 	menuToggle();
 	skillsToggle();
 	navigateToSlide();
+	//autoplaySlides();
 });
