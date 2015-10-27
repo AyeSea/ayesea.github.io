@@ -1,4 +1,6 @@
 var $root = $('html, body');
+var numSlides = $(".slide").length;
+var intervalID;
 
 var hideSkills = function() {
 	$('.skills-heading').next('.panel-body').slideUp("slow");
@@ -46,6 +48,14 @@ var skillsToggle = function() {
 //slider buttons
 var navigateToSlide = function() {
 	$('.slider-button').click(function() {
+			//clicking slider buttons stops the carousel loop
+			window.clearInterval(intervalID);
+			//hide all slides
+			$(".slide").hide();
+			//hide active slide. bug causes two slides to stack and display
+			//when you click right before the setInterval function repeats w/o this line
+			$(".slide-active").hide();
+
 			var newButton = $(this);
 			var currentSlide = $(".slide-active");			
 			var currentButton = $(".slider-button-active");
@@ -82,6 +92,44 @@ var buttonAnimation = function(currentButton, newButton) {
 	newButton.addClass("slider-button-active");	
 }
 
+//finds current slide, fades it out, and fades in next slide
+var showNextSlide = function () {
+	var currentSlide = $(".slide-active");
+	var currentSlideNum = $(".slide").index(currentSlide) + 1;
+	var currentButton = $(".slider-button-active");
+
+	console.log(currentSlideNum);
+
+	var nextButton;
+
+	//determine if we should loop back from last slide to first
+	if (currentSlideNum < numSlides) {
+		//increment currentSlideNum
+		currentSlideNum++;
+		nextButton = $(".slider-button-active").next(".slider-button");
+	} else {
+		//reset currentSlideNum to 1
+		currentSlideNum = 1;
+		nextButton = $(".slider-button").first();
+	}
+
+	//identify next slide
+	var nextSlideNum = currentSlideNum;
+	var nextSlide = $(".slide" + nextSlideNum.toString());
+
+
+	setTimeout(function () {
+		slideAnimation(currentSlide, nextSlide);
+	}, 2000);
+	setTimeout(function () {
+		buttonAnimation(currentButton, nextButton);
+	}, 2000);
+}
+
+var autoplaySlides = function () {
+	intervalID = window.setInterval(showNextSlide, 2000);
+}
+
 
 /* Functions to Run on Document Load */
 $(document).ready(function() {
@@ -89,5 +137,5 @@ $(document).ready(function() {
 	menuToggle();
 	skillsToggle();
 	navigateToSlide();
-	//autoplaySlides();
+	autoplaySlides();
 });
