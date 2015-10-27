@@ -130,6 +130,15 @@ var autoplaySlides = function () {
 	intervalID = window.setInterval(showNextSlide, 2000);
 }
 
+var pauseautoplayOnHover = function () {
+	$(".slide").hover(function () {
+		window.clearInterval(intervalID);
+	}, function () {
+		autoplaySlides();
+	})
+
+}
+
 
 /* Functions to Run on Document Load */
 $(document).ready(function() {
@@ -138,4 +147,5 @@ $(document).ready(function() {
 	skillsToggle();
 	navigateToSlide();
 	autoplaySlides();
+	pauseautoplayOnHover();
 });
