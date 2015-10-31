@@ -189,7 +189,7 @@ footer {
 .project-container {
   display: block;
   width: 100%;
-  min-height: 800px;
+  height: 800px;
   text-align: center;
   text-decoration: none;
   background-size: cover;
@@ -223,13 +223,10 @@ footer {
   transition: all 0.5s ease; }
   .overlay .project-text {
     color: #fff;
-    text-align: center;
     padding-top: 350px; }
     .overlay .project-text .project-title {
       font-size: 30px;
       font-weight: bold; }
-    .overlay .project-text .project-desc {
-      font-size: 20px; }
   .overlay:hover {
     background-color: rgba(0, 0, 0, 0.35); }
 
@@ -250,7 +247,9 @@ footer {
 .slider-buttons {
   text-align: center;
   padding-top: 10px;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  padding-left: 0;
+  margin: 0 auto; }
   .slider-buttons li {
     display: inline-block;
     cursor: pointer;
@@ -267,7 +266,7 @@ li.slider-button-active {
   background-color: rgba(255, 255, 255, 0.35); }
 
 #connect {
-  min-height: 800px;
+  height: 800px;
   background-image: url("../images/contact.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -277,7 +276,7 @@ li.slider-button-active {
   margin-top: 250px;
   margin-right: auto;
   margin-left: auto;
-  width: 320px; }
+  width: 30%; }
   .connect-box a {
     transition: all 0.5s ease; }
 
@@ -300,6 +299,7 @@ li.slider-button-active {
 
 /* Media Queries */
 @media (max-width: 768px) {
+  /* Personal Header */
   .jumbotron {
     height: 475px; }
     .jumbotron .container {
@@ -320,6 +320,32 @@ li.slider-button-active {
         .jumbotron .container #learn-more .down-nav-arrow {
           display: inline; }
         .jumbotron .container #learn-more .down-nav-text {
-          display: none; } }
+          display: none; }
+
+  /* Projects */
+  .project-container {
+    height: 475px; }
+
+  .overlay .project-text {
+    padding-top: 200px; }
+    .overlay .project-text .project-title {
+      font-size: 22.5px; }
+
+  /* About */
+  #self-photo {
+    width: 35%; }
+
+  #blurb {
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 15px; }
+
+  /* Connect */
+  #connect {
+    height: 475px; }
+
+  .connect-box {
+    margin-top: 100px;
+    width: 90%; } }
 
 /*# sourceMappingURL=main.css.map */
