@@ -301,9 +301,9 @@ li.slider-button-active {
 /* Media Queries */
 @media (max-width: 768px) {
   .jumbotron {
-    height: 550px; }
+    height: 475px; }
     .jumbotron .container {
-      padding-top: 150px; }
+      padding-top: 125px; }
       .jumbotron .container h2 #first-name {
         font-size: 40px; }
       .jumbotron .container h2 #last-name {
