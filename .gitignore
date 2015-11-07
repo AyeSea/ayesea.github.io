@@ -1,2 +1,5 @@
 # Exclude sass-cache
 .sass-cache/
+
+# Exclude main.js and use the minified version for live website
+js/main.js

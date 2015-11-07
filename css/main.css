@@ -298,6 +298,9 @@ li.slider-button-active {
     margin-top: 20px; }
 
 /* Media Queries */
+@media (max-width: 1200px) {
+  .connect-box {
+    width: 45%; } }
 @media (max-width: 768px) {
   /* Personal Header */
   .jumbotron {
@@ -346,6 +349,6 @@ li.slider-button-active {
 
   .connect-box {
     margin-top: 100px;
-    width: 90%; } }
+    width: 60%; } }
 
 /*# sourceMappingURL=main.css.map */
